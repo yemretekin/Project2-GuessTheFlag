@@ -16,42 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Why-bb-Pch">
-                                <rect key="frame" x="95" y="100" width="200" height="100"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxl-ga-Foj">
+                                <rect key="frame" x="107" y="240" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9uu-tU-lGt"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="germany"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vo5-RD-4n5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxl-ga-Foj">
-                                <rect key="frame" x="95" y="247" width="200" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r1-TG-0jA">
+                                <rect key="frame" x="107" y="380" width="200" height="114"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="germany"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZH-o5-nyJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r1-TG-0jA">
-                                <rect key="frame" x="95" y="408" width="200" height="100"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSp-we-vzA">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="b5W-fm-tdv"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="germany"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ncd-H0-1QN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xxl-ga-Foj" firstAttribute="top" secondItem="Why-bb-Pch" secondAttribute="bottom" constant="47" id="1BR-lS-2Pn"/>
-                            <constraint firstItem="2r1-TG-0jA" firstAttribute="centerX" secondItem="xxl-ga-Foj" secondAttribute="centerX" id="3ph-d3-oIP"/>
-                            <constraint firstItem="2r1-TG-0jA" firstAttribute="centerX" secondItem="xxl-ga-Foj" secondAttribute="centerX" id="Jhc-EF-W3I"/>
-                            <constraint firstItem="xxl-ga-Foj" firstAttribute="centerX" secondItem="Why-bb-Pch" secondAttribute="centerX" id="Mef-N4-kv9"/>
-                            <constraint firstItem="2r1-TG-0jA" firstAttribute="centerX" secondItem="xxl-ga-Foj" secondAttribute="centerX" id="NHG-01-2fM"/>
-                            <constraint firstItem="2r1-TG-0jA" firstAttribute="top" secondItem="xxl-ga-Foj" secondAttribute="bottom" constant="61" id="Ozs-rJ-6lM"/>
-                            <constraint firstItem="xxl-ga-Foj" firstAttribute="top" secondItem="Why-bb-Pch" secondAttribute="bottom" constant="47" id="RVe-8t-9gW"/>
-                            <constraint firstItem="Why-bb-Pch" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="dZu-c9-l8p"/>
-                            <constraint firstItem="Why-bb-Pch" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-12" id="kRJ-Vl-Yla"/>
-                            <constraint firstItem="xxl-ga-Foj" firstAttribute="firstBaseline" secondItem="Why-bb-Pch" secondAttribute="baseline" constant="47" id="rJI-2F-U95"/>
+                            <constraint firstItem="PSp-we-vzA" firstAttribute="trailing" secondItem="xxl-ga-Foj" secondAttribute="trailing" id="ShR-J5-iQw"/>
+                            <constraint firstItem="2r1-TG-0jA" firstAttribute="top" secondItem="xxl-ga-Foj" secondAttribute="bottom" constant="40" id="VHx-Ta-GZT"/>
+                            <constraint firstItem="xxl-ga-Foj" firstAttribute="leading" secondItem="2r1-TG-0jA" secondAttribute="leading" id="XYi-Hv-07w"/>
+                            <constraint firstItem="PSp-we-vzA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="bE5-GC-5zF"/>
+                            <constraint firstItem="PSp-we-vzA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="bmM-Yy-F4w"/>
+                            <constraint firstItem="xxl-ga-Foj" firstAttribute="trailing" secondItem="2r1-TG-0jA" secondAttribute="trailing" id="s1T-2X-7wZ"/>
+                            <constraint firstItem="PSp-we-vzA" firstAttribute="leading" secondItem="xxl-ga-Foj" secondAttribute="leading" id="sDe-O5-zo8"/>
+                            <constraint firstItem="PSp-we-vzA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tSX-NL-cid"/>
+                            <constraint firstItem="xxl-ga-Foj" firstAttribute="top" secondItem="PSp-we-vzA" secondAttribute="bottom" constant="40" id="uuB-nF-QDw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yjz-hi-A6x"/>
                     <connections>
-                        <outlet property="button1" destination="Why-bb-Pch" id="IO8-wh-Gu4"/>
-                        <outlet property="button2" destination="xxl-ga-Foj" id="Tj4-V0-ODa"/>
-                        <outlet property="button3" destination="2r1-TG-0jA" id="FT4-zb-gOI"/>
+                        <outlet property="button1" destination="PSp-we-vzA" id="pOf-RZ-WUG"/>
+                        <outlet property="button2" destination="xxl-ga-Foj" id="GYV-lm-xFD"/>
+                        <outlet property="button3" destination="2r1-TG-0jA" id="53o-zi-VM9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
